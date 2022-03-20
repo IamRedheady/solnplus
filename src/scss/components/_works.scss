@@ -1,0 +1,127 @@
+.works {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    &__title {
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #0c0c0c;
+        max-width: 760px;
+        margin-left: 410px;
+    }
+
+    &__line {
+        height: 0.5px;
+        width: 100%;
+        background-color: #0c0c0c;
+        display: block;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__cross {
+        max-width: 410px;
+        padding-top: 345px;
+        width: 100%;
+    }
+
+    &__list {
+        max-width: 750px;
+        width: 100%;
+        &-item {
+            border-bottom: 0.5px solid #0c0c0c;
+            width: 100%;
+            &-text {
+                padding: 35px 0;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: #0c0c0c;
+                display: flex;
+                align-items: center;
+                &-num {
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 34px;
+                    color: #0c0c0c;
+                    margin-right: 60px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    &__list-item {
+    }
+
+    &__list-item-text {
+    }
+
+    &__list-item-text-num {
+    }
+}
+.container {
+}
+
+@media screen and (max-width: 1200px) {
+    .works {
+        margin: 120px 0;
+        &__cross {
+            padding-top: 395px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .works {
+        margin-bottom: 70px;
+        &__title {
+            margin-left: 0;
+        }
+        &__inner {
+            flex-direction: column-reverse;
+        }
+        &__cross {
+            padding-top: 20px;
+            display: flex;
+            max-width: 100%;
+            &-svg {
+                width: 37px;
+                height: 37px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 630px) {
+    .works {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .works {
+        margin-bottom: 15px;
+        &__title {
+            font-size: 26px;
+            line-height: 31px;
+        }
+        &__list {
+            &-item {
+                &-text {
+                    font-size: 18px;
+                    line-height: 22px;
+                    &-num {
+                        font-size: 28px;
+                        line-height: 34px;
+                        margin-right: 45px;
+                        width: 34px;
+                    }
+                }
+            }
+        }
+    }
+}

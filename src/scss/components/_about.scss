@@ -1,0 +1,185 @@
+.about {
+    margin-top: 100px;
+    &__title {
+        visibility: hidden;
+        height: 0;
+        pointer-events: none;
+    }
+
+    &__list {
+        max-width: 760px;
+        margin-left: 410px;
+        &-item {
+            border-bottom: 0.5px solid #0c0c0c;
+            &:first-child {
+                border-top: 0.5px solid #0c0c0c;
+            }
+            &-text {
+                padding: 40px 0;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 38px;
+                text-transform: uppercase;
+                color: #0c0c0c;
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+                &-num {
+                    font-weight: 500;
+                    font-size: 38px;
+                    line-height: 46px;
+                    width: 68px;
+                    margin-right: 30px;
+                    &_after {
+                        &-text {
+                            position: relative;
+                            &::after {
+                                content: "лет";
+                                display: block;
+                                position: absolute;
+                                left: 35px;
+                                top: 7.5px;
+                                font-weight: 500;
+                                font-size: 9.82759px;
+                                line-height: 12px;
+                                color: #0c0c0c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__pic-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    &__pic {
+        max-width: 499px;
+        &:last-child {
+            max-width: 562px;
+            margin-left: 99px;
+        }
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__cross {
+        margin-top: 44px;
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .about {
+        &__cross {
+            margin-left: 10px;
+            margin-top: -15px;
+        }
+        &__pic {
+            &-wrapper {
+                margin-top: 80px;
+            }
+            &:last-child {
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .about {
+        &__list {
+            margin-left: 0;
+        }
+        &__cross {
+            margin-left: 0;
+            margin-top: 45px;
+            &-svg {
+                width: 27px;
+                height: 27px;
+            }
+        }
+        &__pic {
+            &-wrapper {
+                margin-top: 40px;
+            }
+            &:last-child {
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .about {
+        &__cross {
+            margin-top: 50px;
+        }
+        &__pic {
+            &-wrapper {
+                margin-top: 15px;
+            }
+        }
+        &__list {
+            margin-left: 0;
+            &-item {
+                &-text {
+                    font-size: 28px;
+                    line-height: 34px;
+                    white-space: initial;
+                    &-num {
+                        font-size: 38px;
+                        line-height: 46px;
+                        margin-right: 30px;
+                        &_after-text {
+                            &::after {
+                                font-size: 9.82759px;
+                                line-height: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about {
+        &__cross {
+            margin-top: 65px;
+            display: flex;
+            &-svg {
+                margin-left: auto;
+            }
+        }
+        &__pic {
+            max-width: 68%;
+            &:last-child {
+                margin-top: 15px;
+                margin-left: auto;
+                max-width: 70%;
+            }
+            &-wrapper {
+                margin-top: 0;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+        &__list {
+            margin-left: 0;
+            &-item {
+                &-text {
+                    font-size: 22px;
+                    line-height: 26px;
+                    padding: 25px 0;
+                }
+            }
+        }
+    }
+}
