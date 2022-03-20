@@ -1,6 +1,8 @@
 .works {
     margin-top: 150px;
     margin-bottom: 150px;
+    transition: filter 0.3s ease;
+    filter: invert(0);
     &__title {
         font-weight: 500;
         font-size: 38px;
@@ -54,17 +56,6 @@
             }
         }
     }
-
-    &__list-item {
-    }
-
-    &__list-item-text {
-    }
-
-    &__list-item-text-num {
-    }
-}
-.container {
 }
 
 @media screen and (max-width: 1200px) {

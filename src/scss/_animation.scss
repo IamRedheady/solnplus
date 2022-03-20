@@ -49,6 +49,37 @@
         opacity: 0;
     }
 }
+.fade-in-bottom {
+    animation: fade-in-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+    position: relative;
+    opacity: 1;
+}
+@keyframes fade-in-bottom {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.fade-in-top {
+    animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 // Preloader
 .preloader {
     position: fixed;
@@ -61,4 +92,11 @@
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
     transform: scaleX(1);
+}
+
+.js-charming-text {
+    overflow: hidden;
+    span {
+        opacity: 0;
+    }
 }
