@@ -15,6 +15,27 @@
 
 <body class="scroll-off">
     <div class="preloader"></div>
+    <div data-name="popup1" class="d-popup js-d-popup">
+        <div class="d-popup-inner">
+            <button data-name="popup1" class="d-popup__btn js-d-popup-toggle">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.303301 0.696699C0.420511 0.579489 0.579483 0.513641 0.745243 0.513641C0.911003 0.513641 1.06997 0.579489 1.18718 0.696699L5.6066 5.11612L10.026 0.696699C10.1432 0.579489 10.3022 0.513641 10.468 0.513641C10.6337 0.513641 10.7927 0.579489 10.9099 0.696699C11.0271 0.81391 11.093 0.97288 11.093 1.13864C11.093 1.3044 11.0271 1.46337 10.9099 1.58058L6.49048 6L10.9099 10.4194C11.0271 10.5366 11.093 10.6956 11.093 10.8614C11.093 11.0271 11.0271 11.1861 10.9099 11.3033C10.7927 11.4205 10.6337 11.4864 10.468 11.4864C10.3022 11.4864 10.1432 11.4205 10.026 11.3033L5.6066 6.88388L1.18718 11.3033C1.06997 11.4205 0.911003 11.4864 0.745243 11.4864C0.579483 11.4864 0.420511 11.4205 0.303301 11.3033C0.18609 11.1861 0.120243 11.0271 0.120243 10.8614C0.120243 10.6956 0.186091 10.5366 0.303301 10.4194L4.72272 6L0.303301 1.58058C0.186091 1.46337 0.120243 1.3044 0.120243 1.13864C0.120243 0.972881 0.18609 0.81391 0.303301 0.696699Z"
+                        fill="#ECECEC" />
+                </svg>
+            </button>
+            <h3 class="d-popup__title">
+                Распознавание лиц
+            </h3>
+            <p class="d-popup__text">
+                Программа «Безопасный регион» создана, согласно Постановления Правительства МО от 27.01.2015 N 23/3
+                (ред. от 03.12.2019), с целью построения единой системы видеонаблюдения на социально значимых объектах
+                муниципальных образований, а также в общественных местах массового пребывания или проживания граждан
+                Московской области. <br><br>
+                Наши специалисты имеют большой опыт по подключению ваших объектов к системе «Безопасный регион».
+            </p>
+        </div>
+    </div>
     <header class="header">
         <div class="menu">
             <div class="menu__wrapper container">
@@ -23,10 +44,10 @@
                 <nav class="menu__nav">
                     <ul class="menu__nav-list">
                         <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="">Этапы работ</a>
+                            <a class="menu__nav-link" href="#works">Этапы работ</a>
                         </li>
                         <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="">Направления</a>
+                            <a class="menu__nav-link" href="#directions">Направления</a>
                         </li>
                     </ul>
                 </nav>
@@ -135,7 +156,7 @@
                 </div>
             </div>
         </section>
-        <section class="works">
+        <section id="works" class="works">
             <div class="container">
                 <h2 class="works__title">
                     Этапы работы
@@ -185,7 +206,7 @@
                 </div>
             </div>
         </section>
-        <section class="directions">
+        <section id="directions" class="directions">
             <div class="container">
                 <div class="directions__top">
                     <p class="directions__pre-title">
@@ -203,27 +224,27 @@
                             </h3>
                             <ul class="directions__block-list">
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Улучшение изображений
                                     </button>
                                 </li>
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Детектирование движения
                                     </button>
                                 </li>
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Распознавание пропажи, <br> либо оставленных без присмотра объектов
                                     </button>
                                 </li>
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Закрытая зона
                                     </button>
                                 </li>
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Детектирование проникновения
                                     </button>
                                 </li>
@@ -235,17 +256,18 @@
                             </h3>
                             <ul class="directions__block-list">
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button data-name="popup1" class="directions__block-list-item-btn js-d-popup-toggle"
+                                        type="button">
                                         Распознавание лиц
                                     </button>
                                 </li>
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Распознавание автомобильных номеров
                                     </button>
                                 </li>
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Детальная ночная съёма в высоком разрешении
                                     </button>
                                 </li>
@@ -255,17 +277,17 @@
                             </h3>
                             <ul class="directions__block-list">
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Слежение за объектами
                                     </button>
                                 </li>
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Детекторы огня и дыма
                                     </button>
                                 </li>
                                 <li class="directions__block-list-item">
-                                    <button class="directions__block-list-item-btn" type="button">
+                                    <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                         Удаленный доступ
                                     </button>
                                 </li>
@@ -300,22 +322,22 @@
                                 </h3>
                                 <ul class="directions__block-list">
                                     <li class="directions__block-list-item">
-                                        <button class="directions__block-list-item-btn" type="button">
+                                        <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                             Техническое обследование объекта
                                         </button>
                                     </li>
                                     <li class="directions__block-list-item">
-                                        <button class="directions__block-list-item-btn" type="button">
+                                        <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                             Проектирование и согласование проекта <br> с контролирующими органами
                                         </button>
                                     </li>
                                     <li class="directions__block-list-item">
-                                        <button class="directions__block-list-item-btn" type="button">
+                                        <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                             Монтаж и подключение к Системе «Безопасный регион»
                                         </button>
                                     </li>
                                     <li class="directions__block-list-item">
-                                        <button class="directions__block-list-item-btn" type="button">
+                                        <button class="directions__block-list-item-btn js-d-popup-toggle" type="button">
                                             Техническое и сервисное обслуживание
                                         </button>
                                     </li>
@@ -517,10 +539,10 @@
                     <div class="footer__list-wrapper">
                         <ul class="footer__stage-list">
                             <li class="footer__stage-list-item">
-                                <a class="footer__stage-list-item-link" href="">Этапы</a>
+                                <a class="footer__stage-list-item-link" href="#works">Этапы</a>
                             </li>
                             <li class="footer__stage-list-item">
-                                <a class="footer__stage-list-item-link" href="">Направления</a>
+                                <a class="footer__stage-list-item-link" href="#directions">Направления</a>
                             </li>
                         </ul>
                         <ul class="footer__contacts-list">
