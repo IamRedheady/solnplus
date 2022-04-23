@@ -1,5 +1,9 @@
 // Preloader and Intro
 import { gsap } from "gsap";
+// Fix safari scroll
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
+
 gsap.to(".preloader", {
     y: "-100%",
     scaleX: 4,
@@ -8,8 +12,10 @@ gsap.to(".preloader", {
     onComplete: () => {
         const body = document.querySelector("body")
         const introContainer = document.querySelector(".intro__container")
+        const header = document.querySelector(".header__container")
         body.classList.remove("scroll-off")
         introContainer.classList.add("fade-in")
+        header.classList.add("fade-in-top")
     }
 })
 
@@ -95,7 +101,7 @@ function isFullyVisible(el) {
     return ((top >= 0) && (bottom <= window.innerHeight));
 }
 
-// Плавный скролл для страницы
+// Плавный скролл для страницы. Предустановка npm install smoothscroll-polyfill для safari
 document.querySelectorAll('a[href^="#"').forEach(link => {
 
     link.addEventListener('click', function (e) {

@@ -83,6 +83,7 @@
   "target": "web",
   "dependencies": {
     "charming": "^3.0.2",
-    "gsap": "^3.9.1"
+    "gsap": "^3.9.1",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }

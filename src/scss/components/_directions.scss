@@ -95,6 +95,13 @@
     &__pic {
         display: flex;
         align-items: flex-end;
+        filter: invert(1);
+    }
+
+    &.invert-off {
+        .directions__pic {
+            filter: none;
+        }
     }
 
     &__text {
