@@ -16,6 +16,10 @@ gsap.to(".preloader", {
         body.classList.remove("scroll-off")
         introContainer.classList.add("fade-in")
         header.classList.add("fade-in-top")
+        setTimeout(() => {
+            header.classList.remove("fade-in-top")
+            header.classList.remove("header-off")
+        }, 1000)
     }
 })
 
