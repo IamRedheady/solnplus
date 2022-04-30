@@ -2,7 +2,7 @@
 import { gsap } from "gsap";
 // Fix safari scroll
 import smoothscroll from 'smoothscroll-polyfill';
-const page = document.querySelector(".page")
+const page = document.querySelector(".main-page")
 if (page) {
     smoothscroll.polyfill();
 

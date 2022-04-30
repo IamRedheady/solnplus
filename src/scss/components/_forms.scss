@@ -1,0 +1,109 @@
+.menu, .footer {
+    &__form {
+        padding: 0 30px;
+        margin-top: auto;
+        max-width: 380px;
+        padding-bottom: 35px;
+        .wpcf7-response-output {
+            border-width: .5px !important;
+            width: 100%;
+            margin: 0 !important;
+            margin-top: 30px !important;
+        }
+    }
+
+    &__form-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #0C0C0C;
+        margin-bottom: 20px;
+    }
+
+    &__form-input {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #0C0C0C;
+        border: none;
+        background: none;
+        padding-bottom: 5px;
+        border-bottom: 0.5px solid #0C0C0C;
+        margin-bottom: 15px;
+        width: 100%;
+        transition: all .3s ease;
+        max-width: 300px;
+        &.wpcf7-not-valid {
+            border-color: #B40A1B;
+        }
+    }
+
+    &__form-submit {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #0C0C0C;
+        border: 0.5px solid #0C0C0C;
+        padding: 11px 36px;
+        background-color: transparent;
+        display: inline-block;
+        cursor: pointer;
+        transition: all .3s ease;
+        margin-top: 10px;
+        &:hover {
+            background-color: #0C0C0C;
+            color: #fff;
+        }
+    }
+    &__form-policy {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #0C0C0C;
+        margin-top: 15px;
+        a {
+            color: #0C0C0C;
+            border-bottom: 1px solid;
+        }
+    }
+}
+.footer {
+    &__form {
+        margin-top: 60px;
+    }
+    &__form-title {
+        color: #ECECEC;
+    }
+    &__form-input {
+        color: #ECECEC;
+        border-bottom: 0.5px solid #ECECEC;
+        &::placeholder {
+            opacity: 1;
+        }
+        &.wpcf7-not-valid {
+            border-color: #B40A1B;
+        }
+    }
+    &__form-submit {
+        color: #ECECEC;
+        border: 0.5px solid #ECECEC;
+        &:hover {
+            background-color: #ECECEC;
+            color: #0C0C0C;
+        }
+    }
+    &__form-policy {
+        color: #ECECEC;
+        a {
+            color: #ECECEC;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .footer {
+        &__form {
+            padding: 0;
+        }
+    }
+}

@@ -108,6 +108,11 @@
     &__nav-contacts {
         display: flex;
     }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 }
 
 .header {

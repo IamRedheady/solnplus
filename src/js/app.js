@@ -2,7 +2,7 @@ import '../scss/app.scss';
 import "./animation";
 /* Your JS Code goes here */
 
-const page = document.querySelector(".page")
+const page = document.querySelector(".main-page")
 if (page) {
     // Шапка
     const menu = document.querySelector('.header');
