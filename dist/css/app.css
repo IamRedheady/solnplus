@@ -395,7 +395,7 @@ input, textarea, select {
   position: fixed;
   background-color: white;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
   top: -100%;
   -webkit-transition: all 0.5s;
@@ -1847,6 +1847,7 @@ input, textarea, select {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   max-width: 300px;
+  border-radius: 0;
 }
 .menu__form-input.wpcf7-not-valid, .footer__form-input.wpcf7-not-valid {
   border-color: #B40A1B;

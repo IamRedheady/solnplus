@@ -34,6 +34,7 @@
         width: 100%;
         transition: all .3s ease;
         max-width: 300px;
+        border-radius: 0;
         &.wpcf7-not-valid {
             border-color: #B40A1B;
         }
