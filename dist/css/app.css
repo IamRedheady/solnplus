@@ -62,6 +62,8 @@ input, textarea, select {
 
 .scroll-off {
   overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -400,11 +402,14 @@ input, textarea, select {
   top: -100%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  overflow: hidden;
 }
 .menu__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .menu__nav {
   height: 100%;
@@ -773,6 +778,7 @@ input, textarea, select {
   color: #0c0c0c;
   margin-right: 60px;
   width: 40px;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 1200px) {

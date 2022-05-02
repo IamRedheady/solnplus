@@ -22,9 +22,13 @@ if (page) {
         btn.addEventListener("click", () => {
             dPopups.forEach(popup => {
                 if (popup.dataset.name === btn.dataset.name) {
-                    document.querySelector("body").classList.toggle("scroll-off")
                     popup.classList.toggle("d-popup_on")
                 }
+                popup.addEventListener("click", (e) => {
+                    if (e.target.classList.contains("d-popup_on")) {
+                        popup.classList.toggle("d-popup_on")
+                    }
+                })
             })
         })
     })

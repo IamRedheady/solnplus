@@ -54,10 +54,13 @@
     z-index: 1;
     top: -100%;
     transition: all 0.5s;
+    overflow: hidden;
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
     &__nav {
         height: 100%;

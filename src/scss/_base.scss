@@ -30,6 +30,8 @@ input, textarea, select {
     }
 .scroll-off {
     overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
