@@ -22,11 +22,17 @@ if (page) {
         btn.addEventListener("click", () => {
             dPopups.forEach(popup => {
                 if (popup.dataset.name === btn.dataset.name) {
-                    popup.classList.toggle("d-popup_on")
+                    popup.classList.toggle("clear")
+                    setTimeout(() => {
+                        popup.classList.toggle("d-popup_on")
+                    }, 200)
                 }
                 popup.addEventListener("click", (e) => {
                     if (e.target.classList.contains("d-popup_on")) {
                         popup.classList.toggle("d-popup_on")
+                        setTimeout(() => {
+                            popup.classList.toggle("clear")
+                        }, 200)
                     }
                 })
             })
